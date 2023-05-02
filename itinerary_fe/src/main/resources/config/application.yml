@@ -1,0 +1,32 @@
+spring:
+  datasource: # MySql Configuration
+    url: jdbc:mysql://192.168.45.77:3306/itinerary?serverTimezone=UTC&characterEncoding=UTF-8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: itinerary
+    password: itinerary#2023
+  jpa: # JPA Configuration
+    show-sql: true
+    open-in-view: false
+    hibernate:
+      ddl-auto: none
+  security: # Security Configuration
+    user:
+      password: itinerary2023!!
+
+springdoc: # Swagger springdoc-ui Configuration
+  default-consumes-media-type: application/json;charset=UTF-8
+  default-produces-media-type: application/json;charset=UTF-8
+  swagger-ui:
+    path: swagger-ui
+    tags-sorter: alpha
+    operations-sorter: alpha
+    display-request-duration: true
+  api-docs:
+    path: /docs
+    groups:
+      enabled: true
+  cache:
+    disabled: true
+
+jwt: # JWT Configuration
+  secret: and0LXRlc3QtYWxqamFiYWVnaS1qd3QtdGVzdC1hbGpqYWJhZWdpLWp3dC10ZXN0LWFsamphYmFlZ2ktand0LXRlc3QtYWxqamFiYWVnaS1qd3QtdGVzdC1hbGpqYWJhZWdpLWp3dC10ZXN0LWFsamphYmFlZ2ktand0LXRlc3QtYWxqamFiYWVnaS1qd3QtdGVzdC1hbGpqYWJhYWdp
